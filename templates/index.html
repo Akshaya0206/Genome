@@ -12,7 +12,6 @@
         <h1 class="display-5 fw-bold">Gene Interaction Predictor</h1>
         <p class="lead mb-0">Predict the strength of genomic interactions using biological support and statistical evidence.</p>
     </div>
-
     <div class="container mt-5">
         <div class="row">
             <!-- Input Form -->
@@ -36,21 +35,20 @@
                     <button type="submit" class="btn btn-primary mt-3">Predict</button>
                     <!-- <button type="reset" class="btn btn-secondary mt-3 ms-2">Reset</button> Extra button -->
                 </form>
-
                 {% if prediction %}
                 <div class="alert alert-info mt-4 fs-5">
                     <strong>Predicted Interaction Strength:</strong> {{ prediction|capitalize }}
                 </div>
                 {% endif %}
             </div>
-
             <!-- About Section -->
             <div class="col-md-4">
                 <div class="card p-3 bg-white shadow-sm">
                     <div class="card-body">
                         <h5 class="card-title text-primary">ℹ️ About</h5>
                         <p class="card-text">
-                            The <strong>Gene Interaction Predictor</strong> uses a trained Support Vector Machine (SVM) model to classify the strength of genomic interactions based on biological support and statistical significance.
+                            The <strong>Gene Interaction Predictor</strong> uses a trained Support Vector Machine (SVM) model to 
+                            classify the strength of genomic interactions based on biological support and statistical significance.
                         </p>
                         <ul>
                             <li>Classifies as <strong>Strong</strong>, <strong>Moderate</strong>, or <strong>Weak</strong></li>
@@ -62,6 +60,5 @@
             </div>
         </div>
     </div>
-
 </body>
 </html>
